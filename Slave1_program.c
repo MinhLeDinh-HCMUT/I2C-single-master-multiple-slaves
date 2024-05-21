@@ -26,7 +26,7 @@ void main(void)
 {
     TRISB=0x00;
     PORTB=0x00;
-    I2C_Slave_Init(0x50); // I2C address
+    I2C_Slave_Init(0x50); // I2C address of Slave 1 (must be unique, different from other slaves)
     while(1)
     {
         PORTBbits.RB1=led_state;
