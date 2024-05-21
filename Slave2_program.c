@@ -37,7 +37,7 @@ void main(void)
 {
     TRISB=0x00;
     PORTB=0x00;
-    I2C_Slave_Init(0x40); // I2C address
+    I2C_Slave_Init(0x40); // I2C address of the Slave 2 (must be unique, different from other slaves)
     ADC_Init();
     while(1)
     {
